@@ -70,10 +70,11 @@ const About: React.FC = () => {
             variants={fadeIn}
           >
             <div className="w-40 h-auto rounded-full overflow-hidden mb-4">
+              {/* Replace with your image */}
               <img
                 src="./img/photo.png"
-                alt="Profile Picture"
-                className="w-full h-full object-cover"
+                alt="photo"
+                className="h-20 max-w-full object-contain"
               />
             </div>
 

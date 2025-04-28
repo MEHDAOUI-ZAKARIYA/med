@@ -15,10 +15,10 @@ const Hero: React.FC = () => {
 
       <div className="absolute bottom-0 z-10 w-full p-8">
         <div className="flex flex-col sm:flex-row gap-7 justify-center items-center">
-          <a href="/contact" className="btn btn-primary">
+          <a href="./Contact" className="btn btn-primary">
             Get in touch
           </a>
-          <a href="/projects" className="btn btn-secondary">
+          <a href="./Projects" className="btn btn-secondary">
             View my work
           </a>
         </div>

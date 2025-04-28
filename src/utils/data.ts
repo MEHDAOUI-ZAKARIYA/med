@@ -177,7 +177,7 @@ export const projects: Project[] = [
     description:
       "Developed the official website of DevInnova, a company focused on software engineering, highlighting their services, portfolio, and digital solutions with a modern, responsive design.",
     technologies: ["Html", "CSS", "JavaScript"],
-    image: "./img/Devlnnova.jpg",
+    image: "./img/Dev.jpg",
     github: "https://mehdaoui-zakariya.github.io/Projects/",
   },
 ];

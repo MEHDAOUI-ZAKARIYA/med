@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   ];
 
   const handleNavLinkClick = (href: string) => {
-    if (href.startsWith("#")) {
+    if (href.startsWith("/test/Hero")) {
       // Smooth scroll to anchor section
       document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     } else {
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="/Hero" className="flex items-center">
+            <a href="/test/Hero" className="flex items-center">
               <img
                 src="./img/Logo.png"
                 alt="Zakariya Logo"
