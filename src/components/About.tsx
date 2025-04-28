@@ -20,10 +20,11 @@ const About: React.FC = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background with Spline */}
-      <div className="absolute inset-0 z-0">
-        <main className="w-full h-full scale-150">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <main className="w-full h-screen opacity-80  relative ">
           <Spline scene="https://prod.spline.design/nLEbjV609zZBezOm/scene.splinecode" />
         </main>
+        <div className="fixed bottom-0  blur-lg opacity-96 left-0 w-screen h-20 bg-white dark:bg-zinc-950 z-10"></div>
       </div>
 
       <div className="absolute inset-0 bg-black opacity-30 z-10" />
@@ -69,12 +70,12 @@ const About: React.FC = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeIn}
           >
-            <div className="w-40 h-auto rounded-full overflow-hidden mb-4">
+            <div className="w-40 h-auto rounded-lg overflow-hidden mb-4">
               {/* Replace with your image */}
               <img
-                src="./img/photo.png"
+                src="/img/photo.png"
                 alt="photo"
-                className="h-20 max-w-full object-contain"
+                className="h-30 opacity-50 max-w-full object-contain"
               />
             </div>
 

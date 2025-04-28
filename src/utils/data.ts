@@ -142,7 +142,16 @@ export const educations: Education[] = [
     institution: "Technopark Agadir - Orange Digital Center",
     location: "Agadir, Morocco",
     startDate: "2022",
-    endDate: "2023",
+    endDate: "2022",
+  },
+  {
+    id: 3,
+    degree: "Certificate of Attendance",
+    field: "Django and Express Frameworks",
+    institution: "Technopark Agadir - Orange Digital Center",
+    location: "Agadir, Morocco",
+    startDate: "2025",
+    endDate: "2025",
   },
   {
     id: 3,
@@ -177,7 +186,7 @@ export const projects: Project[] = [
     description:
       "Developed the official website of DevInnova, a company focused on software engineering, highlighting their services, portfolio, and digital solutions with a modern, responsive design.",
     technologies: ["Html", "CSS", "JavaScript"],
-    image: "./img/Dev.jpg",
+    image: "img/Dev.jpg",
     github: "https://mehdaoui-zakariya.github.io/Projects/",
   },
 ];
