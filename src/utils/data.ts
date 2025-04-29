@@ -1,4 +1,5 @@
-// CV Data - Replace with your real information
+//CV Data - Replace with your real information
+import Dev from "/img/Dev.jpg";
 export interface Experience {
   id: number;
   title: string;
@@ -186,7 +187,7 @@ export const projects: Project[] = [
     description:
       "Developed the official website of DevInnova, a company focused on software engineering, highlighting their services, portfolio, and digital solutions with a modern, responsive design.",
     technologies: ["Html", "CSS", "JavaScript"],
-    image: "img/Dev.jpg",
+    image: Dev,
     github: "https://mehdaoui-zakariya.github.io/Projects/",
   },
 ];

@@ -3,6 +3,7 @@ import { MapPin, Mail, Linkedin, Github } from "lucide-react";
 import { about } from "../utils/data";
 import { motion } from "framer-motion";
 import Spline from "@splinetool/react-spline"; // Ensure you have this import for the Spline component
+import photo from "/img/photo.png";
 
 const About: React.FC = () => {
   const fadeIn = {
@@ -73,7 +74,7 @@ const About: React.FC = () => {
             <div className="w-40 h-auto rounded-lg overflow-hidden mb-4">
               {/* Replace with your image */}
               <img
-                src="/img/photo.png"
+                src={photo}
                 alt="photo"
                 className="h-30 opacity-50 max-w-full object-contain"
               />

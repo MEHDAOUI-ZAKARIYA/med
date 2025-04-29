@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTheme } from "../contexts/ThemeContext";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import logo from "/img/logo.png"; // Correct path for your logo
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -18,8 +19,8 @@ const Header: React.FC = () => {
   ];
 
   const handleNavLinkClick = (href: string) => {
-    if (href.startsWith("/test/Hero")) {
-      // Smooth scroll to anchor section
+    if (href === "#hero") {
+      // Smooth scroll to anchor section (Hero)
       document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
     } else {
       // Navigate to a new page
@@ -29,15 +30,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header
-      className={`fixed  top-0 left-0 right-0 z-50 transition-all duration-300 md: `}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 md:">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="/test/Hero" className="flex items-center">
+            <a href="/Hero" className="flex items-center">
               <img
-                src="/img/Logo.png"
+                src={logo}
                 alt="Zakariya Logo"
                 className="h-20 max-w-full object-contain"
               />
