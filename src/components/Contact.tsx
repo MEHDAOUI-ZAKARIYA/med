@@ -54,11 +54,12 @@ const Contact: React.FC = () => {
       id="contact"
       className=" min-h-screen section p-0 m-0 relative overflow-hidden flex items-center justify-center"
     >
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="w-full h-screen opacity-80  relative">
+      <div className="absolute inset-0 z-1 overflow-hidden">
+        <div className="w-full h-screen md:h-screen sm:h-[60vh] opacity-40   relative">
           <Spline scene="https://prod.spline.design/N9GuC2dej89rISWv/scene.splinecode" />
-          {/* Overlay pour cacher le logo en bas */}
-          <div className="fixed bottom-0  blur-lg opacity-96 left-0 w-screen h-20 bg-white dark:bg-slate-800 z-10"></div>
+
+          {/* Overlay flou pour masquer le logo Spline */}
+          <div className="fixed bottom-4 sm:bottom-12 blur-lg opacity-96 left-0 w-screen h-20 bg-white dark:bg-slate-800 z-2"></div>
         </div>
       </div>
 
