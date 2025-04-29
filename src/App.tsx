@@ -1,5 +1,4 @@
-// import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,7 +7,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
@@ -18,6 +16,7 @@ function App() {
         <Header />
         <main className="flex-grow">
           <Routes>
+            <Route path="/" element={<Hero />} />
             <Route path="/Hero" element={<Hero />} />
             <Route path="/About" element={<About />} />
             <Route path="/Skills" element={<Skills />} />
@@ -25,8 +24,7 @@ function App() {
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Education" element={<Education />} />
             <Route path="/Contact" element={<Contact />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Projects" element={<Projects />} />
+            <Route path="*" element={<Hero />} />
           </Routes>
         </main>
       </Router>

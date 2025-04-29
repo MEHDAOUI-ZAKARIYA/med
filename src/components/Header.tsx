@@ -10,6 +10,7 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const navLinks = [
+    { name: "", href: "/" },
     { name: "About", href: "/About" },
     { name: "Skills", href: "/Skills" },
     { name: "Experience", href: "/Experience" },
@@ -34,7 +35,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
-              onClick={() => handleNavLinkClick("/Hero")}
+              onClick={() => handleNavLinkClick("/")}
               className="flex items-center"
             >
               <img
