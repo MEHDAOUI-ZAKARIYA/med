@@ -8,8 +8,12 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+  }, []);
   return (
     <ThemeProvider>
       <Router>
@@ -24,6 +28,7 @@ function App() {
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Education" element={<Education />} />
             <Route path="/Contact" element={<Contact />} />
+
             <Route path="*" element={<Hero />} />
           </Routes>
         </main>

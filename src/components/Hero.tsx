@@ -12,6 +12,7 @@ const Hero: React.FC = () => {
       navigate(href);
     }
   };
+
   const handleNavLinkClick2 = (href: string) => {
     if (href === "/Projects") {
       navigate("/Projects"); // Vous pouvez directement naviguer à la page Hero.jsx
@@ -19,28 +20,30 @@ const Hero: React.FC = () => {
       navigate(href);
     }
   };
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <main className="w-full h-screen opacity-80 relative  ">
-          <Spline scene="https://prod.spline.design/XfpPD0QPNpCUJWl4/scene.splinecode" />
+        <main className="w-full h-screen opacity-80 relative scale-150 ">
+          <Spline   scene="https://prod.spline.design/mvuSUwAfqDP2O36f/scene.splinecode" />
+
         </main>
-        <div className="fixed bottom-0  blur-lg opacity-96 left-0 w-screen h-20 bg-zinc-950 dark:bg-zinc-950 z-10"></div>
       </div>
+
       <div className="absolute bottom-0 z-10 w-full p-8">
         <div className="flex flex-col sm:flex-row gap-7 justify-center items-center">
           <button
             onClick={() => handleNavLinkClick("/Contact")}
-            className="btn btn-primary"
+            className="px-6 py-3 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300 rounded-md focus:outline-none"
           >
             Get in touch
           </button>
           <button
             onClick={() => handleNavLinkClick2("/Projects")}
-            className="btn btn-secondary"
+            className="px-6 py-3 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-colors duration-300 rounded-md focus:outline-none"
           >
             View my work
           </button>

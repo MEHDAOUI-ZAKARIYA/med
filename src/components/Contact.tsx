@@ -52,20 +52,19 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className=" min-h-screen section p-0 m-0 relative overflow-hidden flex items-center justify-center"
+      className=" min-h-screen section pl-0 relative overflow-hidden flex items-center justify-center"
     >
-      <div className="absolute inset-0 z-1 overflow-hidden">
-        <div className="w-full h-screen md:h-screen sm:h-[60vh] opacity-40   relative">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="w-full h-screen md:h-screen sm:h-[60vh] opacity-40  scale-150  relative">
           <Spline scene="https://prod.spline.design/N9GuC2dej89rISWv/scene.splinecode" />
 
-          {/* Overlay flou pour masquer le logo Spline */}
-          <div className="fixed bottom-4 sm:bottom-12 blur-lg opacity-96 left-0 w-screen h-20 bg-white dark:bg-slate-800 z-2"></div>
+
         </div>
       </div>
 
-      <div className="container mx-auto mt-20">
+      <div className="container mx-auto mt-20 ">
         <motion.h2
-          className="section-heading"
+          className="section-heading pl-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -74,7 +73,7 @@ const Contact: React.FC = () => {
           Get In Touch
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pl-4">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -93,7 +92,7 @@ const Contact: React.FC = () => {
                 <MapPin className="text-blue-500 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-slate-700 dark:text-slate-300">
+                  <p className="text-slate-300">
                     {about.location}
                   </p>
                 </div>
