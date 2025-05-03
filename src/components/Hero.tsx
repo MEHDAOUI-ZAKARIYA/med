@@ -27,9 +27,8 @@ const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <main className="w-full h-screen opacity-80 relative scale-150 ">
-          <Spline   scene="https://prod.spline.design/mvuSUwAfqDP2O36f/scene.splinecode" />
-
+        <main className="w-full h-screen  scale-150 relative  ">
+          <Spline scene="https://prod.spline.design/mgs7udQfNL8pRIbh/scene.splinecode" />
         </main>
       </div>
 
@@ -37,13 +36,13 @@ const Hero: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-7 justify-center items-center">
           <button
             onClick={() => handleNavLinkClick("/Contact")}
-            className="px-6 py-3 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-300 rounded-md focus:outline-none"
+            className="px-6 py-3 border border-white text-white hover:bg-white hover:text-black transition-colors duration-300 rounded-md focus:outline-none"
           >
             Get in touch
           </button>
           <button
             onClick={() => handleNavLinkClick2("/Projects")}
-            className="px-6 py-3 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-colors duration-300 rounded-md focus:outline-none"
+            className="px-6 py-3 border border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black transition-colors duration-300 rounded-md focus:outline-none"
           >
             View my work
           </button>

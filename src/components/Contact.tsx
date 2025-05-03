@@ -52,17 +52,15 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className=" min-h-screen section pl-0 relative overflow-hidden flex items-center justify-center"
+      className=" min-h-screen section  relative flex items-center justify-center"
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="w-full h-screen md:h-screen sm:h-[60vh] opacity-40  scale-150  relative">
+        <div className="w-full h-screen md:h-screen sm:h-screen opacity-50  scale-150  relative">
           <Spline scene="https://prod.spline.design/N9GuC2dej89rISWv/scene.splinecode" />
-
-
         </div>
       </div>
 
-      <div className="container mx-auto mt-20 ">
+      <div className="container mx-auto mt-12 ">
         <motion.h2
           className="section-heading pl-3"
           initial="hidden"
@@ -92,9 +90,7 @@ const Contact: React.FC = () => {
                 <MapPin className="text-blue-500 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-slate-300">
-                    {about.location}
-                  </p>
+                  <p className="text-slate-300">{about.location}</p>
                 </div>
               </div>
 
